@@ -1,0 +1,181 @@
+.btn-facebook{
+	background: #1877F2;
+	border-radius: 6px;
+	padding: 7px 10px;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+	color: #FFFFFF;
+}
+.btn-google{
+	background: #ffffff;
+	border-radius: 6px;
+	padding: 7px 10px;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+	color: #212121;
+	border: 1px solid #E0E0E0;
+}
+.btn-facebook img,
+.btn-google img{
+	margin-right: 10px;
+}
+/*****buttons****/
+.btn-outline{
+  border: 1px solid #6A9586;
+  border-radius: 6px;
+  align-items: center;
+  padding: 11px 20px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #4F8C77;
+}
+.btn-outline:hover{
+  color: #4F8C77;
+}
+.btn-outline-violet{
+  border: 1px solid #707FDA;
+  border-radius: 6px;
+  align-items: center;
+  padding: 11px 20px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #5B69BD;
+}
+.btn-outline-violet:hover{
+  color: #5B69BD;
+}
+.btn-solid{
+  border: 1px solid #6A9586;
+  background: #6A9586;
+  border-radius: 6px;
+  padding: 11px 20px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.btn-solid-grey{
+  background: #F4F5F9;
+  border-radius: 6px;
+  align-items: center;
+  padding: 11px 20px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #4F8C77;
+}
+.btn-outline-white{
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 11px 20px;
+}
+.btn-outline-white:hover{
+  color: #ffffff;
+}
+.btn-solid-white{
+  background: #ffffff;
+  border-radius: 6px;
+  align-items: center;
+  padding: 11px 20px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #707fda;
+}
+.btn-solid-red{
+  border: 1px solid #F57070;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  background-color: #F57070;
+  color: #FFFFFF;
+  padding: 11px 20px;
+}
+.btn-solid-violet{
+  border: 1px solid #707FDA;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  background-color: #707FDA;
+  color: #FFFFFF;
+  padding: 11px 20px;
+}
+.btn-solid-violet:hover{
+  color: #ffffff;
+}
+[type='button'],
+[type='submit'] {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+
+ }
+
+ .custom-expand-btn .expand-button.collapsed:after,
+ .uploaded-submition-btn .expand-button.collapsed:after{
+  background-image: url(../../images/influencer-list/accardion-expand.svg);
+  transform: rotate(180deg);
+  transition: ease-in-out .3s;
+}
+.custom-expand-btn .expand-button:after {
+  content: " ";
+  width: 10px;
+  height: 5px;
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 5px;
+  background-image: url(../../images/influencer-list/accardion-expand.svg);
+  background-repeat: no-repeat;
+  transition: ease-in-out .3s;
+}
+.custom-expand-btn .btn{
+  background: #F9F9FF;
+  border: 1px solid #E9EBF3;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #212121;
+}
+
+.uploaded-submition-btn .btn{
+  padding: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #212121;
+  text-align: left;
+  width: 100%;
+}
+.uploaded-submition-btn .btn img{
+  margin-right: 10px;
+}
+.uploaded-submition-btn .expand-button:after{
+  content: " ";
+  width: 10px;
+  height: 5px;
+  position: relative;
+  float: right;
+  top: 8px;
+  background-image: url(../../images/influencer-list/accardion-expand.svg);
+  background-repeat: no-repeat;
+  transition: ease-in-out .3s;
+}

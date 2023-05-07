@@ -1,0 +1,74 @@
+.bg-contact{
+	background-image: url(../../images/landing/contact-banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 374px;
+	padding: 100px 0;
+}
+.bg-contact h1{
+	font-weight: bold;
+	font-size: 64px;
+	line-height: 64px;
+	color: #FFFFFF;
+	margin-bottom: 25px;
+}
+.bg-contact p{
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 30px;
+	color: #FFFFFF;
+	max-width: 750px;
+}
+.contact{
+	padding-top: 70px;
+	padding-bottom: 100px;
+}
+.contact .title h1{
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 42px;
+	color: #000000;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	text-transform: initial;
+}
+.contact-card{
+	box-shadow: 0px 10px 40px -5px rgba(27, 30, 51, 0.05);
+	max-width: 460px;
+}
+.contact-head{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.contact-head img{
+	width: 56px;
+	height: 56px;
+	margin-right: 15px;
+}
+.contact-head p{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 20px;
+	color: #222723;
+	margin-bottom: 7px;
+}
+.contact-head span{
+	font-size: 16px;
+	line-height: 18px;
+	color: #6E7391;
+}
+.contact-text{
+	font-size: 14px;
+	line-height: 16px;
+	color: #222723;
+}
+.contact-info img{
+	margin-right: 10px;
+}
+.contact-info p{
+	font-size: 14px;
+	line-height: 16px; 
+	margin-top: 20px;
+	color: #6E7391;
+}

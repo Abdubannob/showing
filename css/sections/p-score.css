@@ -1,0 +1,43 @@
+.p-score .item{
+	margin-bottom: 20px;
+	padding: 20px;
+	border-radius: 12px;
+	border: 1px solid #DFE3F4;
+}
+.p-score label{
+	font-size: 14px;
+    line-height: 16px;
+    color: #6E7391;
+    font-weight: normal;
+    margin-bottom: -3px;
+}
+.p-score .form-check-input:checked {
+    background-color: #707FDA;
+    border-color: #707FDA;
+}
+.p-score .form-check{
+	margin-bottom: 10px;
+}
+.p-score h3{
+	font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #373E56;
+    margin-bottom: 10px;
+}
+.p-score h1 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #212121;
+    margin-bottom: 10px;
+}
+.p-score .progress{
+	height: 22px;
+	margin: 0 0 20px 0;
+	width: 100%;
+	border-radius: 6px;
+}
+.p-score .progress-bar{
+	background-color: #707FDA;
+}

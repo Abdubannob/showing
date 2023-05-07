@@ -1,0 +1,340 @@
+.influencer-list{
+  margin-top: 30px;
+}
+#inf-list .card{
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #E9EBF3;
+  margin-bottom: 0;
+  box-shadow: none;
+}
+#inf-list .card .card-body img{
+  width: 14px;
+  height: 14px;
+  margin-right: 0;
+}
+#inf-list .card-header {
+  padding: 0;
+  border: none;
+  background-color: #ffffff;
+}
+#inf-list .form-check-label{
+  display: inline-flex;
+}
+#inf-list .btn-header-link {
+  display: block;
+  text-align: left;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #7E847F;
+  padding: 20px;
+}
+
+#inf-list .btn-header-link:after {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: 8px;
+  float: right;
+  background-image: url(../../images/profile/arrow-up.svg);
+  background-repeat: no-repeat;
+  transition: ease-in-out .5s;
+}
+
+#inf-list .btn-header-link.collapsed:after {
+  background-image: url(../../images/profile/arrow-up.svg);
+  transform: rotate(180deg);
+  transition: ease-in-out .5s;
+}
+.sidenav-accordion .card-body{
+  padding: 20px;
+}
+.sidenav-search .form-control-feedback{
+  width: 52px;
+  line-height: 40px;
+  z-index: 0;
+}
+.sidenav-search{
+  margin-bottom: 20px;
+}
+.sidenav-search .form-control{
+  background-color: transparent;
+  border: 1px solid #E9EBF3;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #99A29C;
+}
+
+.sidenav-accordion .form-check label{
+  margin-bottom: 0;
+  font-weight: normal;
+  max-width: 138px;
+}
+.sidenav-accordion .form-check p{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #99A29C;
+}
+.sidenav-accordion .form-check-input{
+  border: 2px solid #B1CDBA;
+  border-radius: 4px;
+}
+.sidenav-accordion .form-check-input:checked{
+  background-color: #6A9586;
+  border-color: #6A9586;
+}
+.sidenav-accordion .form-show-more{
+  display: flex;
+  justify-content: space-between;
+}
+.sidenav-accordion .form-show-more .btn{
+  padding: 0;
+}
+.sidenav-accordion .form-show-more .btn.show-more{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #4F8C77;
+}
+.sidenav-accordion .form-show-more .btn.clear{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #222723;
+}
+.sidenav-accordion .clear-filter .btn{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #222723;
+  float: right;
+  margin-top: 20px;
+}
+
+#view-sort .grid{
+  background-image: url(../../images/influencer-list/view-grid.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#view-sort .grid.active{
+  background-image: url(../../images/influencer-list/view-grid-active.svg);
+}
+#view-sort .inline{
+  background-image: url(../../images/influencer-list/view-inline.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#view-sort .inline.active{
+  background-image: url(../../images/influencer-list/view-inline-active.svg);
+}
+
+
+.view-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.influencer-card
+{ 
+    background: #FFFFFF;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border: none;
+    padding: 0px;
+    box-shadow: 0px 10px 40px -5px rgba(27, 30, 51, 0.05);
+}
+#products.blured .item:nth-child(n+7){
+  -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+  filter: blur(2px);
+  pointer-events:none;
+}
+.influencer-card-body{
+  padding: 20px;
+  border-bottom: 1px solid #E9EBF3;
+}
+.influencer-card-footer{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.influencer-card-body .user-info{
+  display: flex;
+  align-items: center;
+}
+.influencer-card-body .user-info img{
+  width: 56px;
+  height: 56px;
+  margin-right: 15px;
+}
+.influencer-card-body .user-info h5{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: #222723;
+  margin-bottom: 7px;
+}
+.influencer-card-body .user-info h5 img{
+  width: 16px;
+  height: 16px;
+}
+.influencer-card-body .user-info p{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #7E847F;
+}
+.influencer-card-body .influencer-stats{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.influencer-card-body .influencer-stats h3{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #212121;
+  margin-bottom: 5px;
+}
+.influencer-card-body .influencer-stats p{
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #7E847F;
+}
+
+.influencer-card-footer .location{
+  display: flex;
+  align-items: center;
+}
+.influencer-card-footer .location p{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #7E847F;
+  margin-left: 3px;
+}
+.influencer-card-footer .like-save .btn{
+  padding: 0; 
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
+}
+.influencer-card-footer .like-save .save{
+  background-image: url(../../images/influencer-list/save.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.influencer-card-footer .like-save .save.active{
+  background-image: url(../../images/influencer-list/save-active.svg);
+}
+.influencer-card-footer .like-save .like{
+  background-image: url(../../images/influencer-list/like.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.influencer-card-footer .like-save .like.active{
+  background-image: url(../../images/influencer-list/like-active.svg);
+}
+.item.list-group-item
+{
+  background-color: transparent;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 15px;
+  border: 0;
+}
+.item.list-group-item .influencer-card{
+  display: flex;
+  align-items: center;
+}
+.item.list-group-item .influencer-card-body{
+  display: flex;
+  align-items: center;
+  border-bottom: 0;
+}
+.item.list-group-item .user-info{
+  padding-right: 20px;
+  border-right: 1px solid #E9EBF3;
+  width: max-content;
+}
+.item.list-group-item .influencer-stats div{
+  padding: 0 20px;
+  border-right: 1px solid #E9EBF3;
+}
+.item.list-group-item .influencer-card-footer{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.item.list-group-item .influencer-stats{
+  margin-top: 0;
+}
+
+
+
+.filter-range p{
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #212121;
+  margin-bottom: 10px;
+}
+.irs--round{
+  height: 20px;
+  top: 10px;
+}
+.irs--round .irs-bar {
+  height: 2px;
+  background-color: #212121;
+  top: 0;
+}
+
+.irs--round .irs-handle {
+  background-color: #212121;
+  border: none;
+  box-shadow: none;
+  width: 20px;
+  top: -10px;
+  height: 20px;
+}
+
+.irs--round .irs-handle.state_hover, 
+.irs--round .irs-handle:hover {
+   background-color: #212121;
+}
+
+
+.irs--round .irs-from, 
+.irs--round .irs-to, 
+.irs--round .irs-single {
+  display: none;
+}
+
+.irs--round .irs-from:before, 
+.irs--round .irs-to:before, 
+.irs--round .irs-single:before,
+.irs--round .irs-min, 
+.irs--round .irs-max {
+  display: none;
+}
+
+.irs--round .irs-line{
+  height: 2px;
+  top: 0px;
+  background-color: #99A29C;
+}

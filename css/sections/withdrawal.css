@@ -1,0 +1,240 @@
+.withdrawal-info-desk.row{
+	margin: 0px;
+}
+.withdrawal-info-desk .item{
+	text-align: center;
+	/*border-left: 1px solid #E9EBF3;
+	border-right: 1px solid #E9EBF3;*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.withdrawal-info-desk .item p{
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 28px;
+	margin-bottom: 5px;
+	color: #373E56;
+}
+.withdrawal-info-desk .item h4{
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	color: #373E56;
+}
+.withdrawals-manual .amount{
+	margin-bottom: 30px;
+}
+.withdrawals-manual .amount label{
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 28px;
+	color: #4E525D;
+	margin-bottom: 10px;
+	display: block;
+}
+.withdrawals-manual .amount input{
+	font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #212121;
+    border: 2px solid #707FDA;
+    border-radius: 12px;
+    width: 150px;
+    background-color: transparent;
+    padding: 20px;
+}
+.withdrawals-manual .amount input:focus{
+	box-shadow: none;
+}
+.withdrawals-manual .calculation .fee{
+	display: flex;
+	align-items: center;
+}
+.withdrawals-manual .calculation .fee p{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 28px;
+	margin-right: 16px;
+	color: #212121;
+}
+.withdrawals-manual .calculation .fee span{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: #757575;
+}
+.withdrawals-manual .calculation .vl{
+	border-left: 1px solid #000000;
+	opacity: 0.3;
+	margin-right: 16px;
+  	height: 28px;
+}
+.vl{
+	border-left: 1px solid #000000;
+	opacity: 0.3;
+	margin-right: 10px;
+}
+.withdrawals-manual .calculation .total p{
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: #212121;
+}
+.add-withdrawal{
+	background: #F9F9FF;
+	border: 1px solid #E5E5E5;
+	padding: 12px 22px;
+	border-radius: 12px;
+	max-width: 265px;
+	margin-bottom: 30px;
+}
+.add-withdrawal p{
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 28px;
+	color: #000000;
+}
+.add-withdrawal a{
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 28px;
+	color: #4261CC;
+	padding: 0;
+}
+a.add-withdrawal{
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 28px;
+	color: #4261CC;
+	padding: 0;
+}
+.withdrawals-table .box{
+	box-shadow: 0px 0px 30px -9px rgba(58, 76, 190, 0.19);
+}
+.withdrawals-table thead th{
+	padding: 9px 20px 6px;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 28px;
+	color: #4261CC;
+}
+.withdrawals-table td{
+	padding: 22px 20px 17px;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 26px;
+	color: #4E525D;
+}
+.withdrawals-table tbody.order td:last-child{
+	text-decoration-line: underline;
+}
+
+..withdrawal .card-select{
+    max-width: 720px;
+}
+.withdrawal .card-select .check-card{
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.withdrawal .card-select .check-card:focus,
+.withdrawal .card-select .check-card.active{
+    border: 2px solid #4261CC;
+}
+.withdrawal .card-select .check-card .img{
+	width: 47px;
+	height: 47px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background: #F9F9FF;
+	border: 1px solid #CED4E2;
+	margin-right: 20px;
+}
+.withdrawal .card-select .form-check-input{
+	margin-right: 15px;
+}
+.withdrawal .card-select .form-check label{
+	display: flex;
+	align-items: center;
+}
+.withdrawal .card-select .form-check label h4{
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 18px;
+	color: #373E56;
+	margin-bottom: 4px;
+}
+.withdrawal .card-select .form-check label p{
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 18px;
+	color: rgba(55, 62, 86, 0.6);
+	margin-bottom: 0;
+}
+.withdrawal .form-check .form-check-input{
+	margin-left: 0;
+}
+.withdrawal .card-select .check-card img{
+	margin-right: 0;
+}
+.withdrawal .form-check-label img{
+	max-height: 28px;
+}
+.withdrawals-monthly p.description{
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 28px;
+	color: #4E525D;
+	max-width: 375px;
+	margin-bottom: 30px;
+}
+.disable-withdraw{
+	background: #F9F9FF;
+	border: 1px solid #E5E5E5;
+	padding: 16px 22px;
+	border-radius: 12px;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 28px;
+	color: #373E56;
+}
+
+.history caption{
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 14px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #212121;
+	padding: 0 0 20px;
+}
+.history th{
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 18px;
+	color: #212121;
+}
+.history td{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #212121;
+}
+.history th:last-child,
+.history td:last-child{
+	text-align: right;
+}
+.history tr:last-child{
+	border: 0px solid transparent;
+}
+.history .table>:not(caption)>*>*{
+	padding: 15px 0;
+}

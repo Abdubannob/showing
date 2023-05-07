@@ -1,0 +1,19 @@
+.line-chart{
+	margin-bottom: 40px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.doughnut-chart{
+	display: grid;
+	grid-column-gap: 65px;
+	grid-row-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+@media (max-width: 440.98px) {
+	.line-chart,
+	.doughnut-chart{
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+}

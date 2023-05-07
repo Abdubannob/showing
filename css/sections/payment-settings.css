@@ -1,0 +1,110 @@
+#payment .btn-header-link:before{
+    content: url(../../images/icons/checked.svg);
+    height: 20px;
+}
+#payment .btn-header-link.collapsed:before{
+    content: url(../../images/icons/check.svg);
+}
+#payment .brand .btn-header-link:before{
+    content: url(../../images/icons/checked-brand.svg);
+    height: 20px;
+}
+#payment .brand .btn-header-link.collapsed:before{
+    content: url(../../images/icons/check-brand.svg);
+}
+.payment-card a{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+.payment-card a img{
+    margin-left: 15px;
+}
+.payment-card{
+    border-bottom: 1px solid #E9EBF3;;
+}
+.payment-card:last-child{
+    border-bottom:  none;
+}
+.payment-card .item{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    justify-content: space-between;
+}
+.payment-card .item p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #373E56;
+    margin-left: 15px;
+}
+
+/******payment-default-card*******/
+.payment-card-select{
+    margin-top: 30px;
+}
+.payment-card-select h1{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: #212121;
+    margin-bottom: 12px;
+}
+.card-select{
+    max-width: 500px;
+}
+.card-select .check-card{
+    background: #FFFFFF;
+    border: 1px solid #B1CDBA;
+    border-radius: 12px;
+    padding: 15px 20px 15px 40px;
+    margin-bottom: 20px;
+}
+.card-select .check-card:focus,
+.card-select .check-card.active{
+    border: 2px solid #6A9586;
+}
+.card-select .check-card img{
+    margin-right: 4px;
+}
+.card-select .violet .check-card{
+    border: 1px solid #C7CBE0;
+}
+.card-select .violet .check-card:focus,
+.card-select .violet .check-card.active {
+    border: 2px solid #707FDA;
+}
+
+.bank-trasfer .table tr:first-child td{
+    padding: 15px 0;
+}
+.bank-trasfer .table>:not(caption)>*>*{
+    padding: 15px 0;
+}
+.bank-trasfer .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.bank-trasfer .head h1{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #212121;
+}
+.bank-trasfer .head .btn{
+    padding: 0;
+}
+.bank-trasfer .head .btn img{
+    margin: 0;
+}
+.bank-trasfer h3.sub-title{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #212121;
+}

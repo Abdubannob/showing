@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./vendor/css/bootstrap.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./css/main.css" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
+    </head>
+
+    <body>
+        <nav class="navbar justify-content-between fixed-top violet">
+            <div class="row">
+                <div class="col">
+                    <a href="dashboard-influencer.html" class="navbar-brand"><img src="../../images/tech-logo.svg" alt="logo" /></a>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col">
+                    <button class="btn p-0">
+                        <img class="m-0" src="../../images/icons/nav-bell.svg" alt="Bell" />
+                    </button>
+                    <a href="edit-profile-influencer.html" class="btn avatar"><img class="rounded-circle" src="../../images/ava.png" alt="ava" /></a>
+                </div>
+            </div>
+        </nav>
+        <div class="sidebar">
+            <div class="sidebar-body d-flex" style="height: auto; min-height: -webkit-fill-available">
+                <div class="social violet">
+                    <ul>
+                        <li>
+                            <p>
+                                <a href="dashboard-influencer.html" class="dashboard">Dashboard</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="request.html" class="request">Requests</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p><a href="#" class="service">Services</a></p>
+                        </li>
+                        <li>
+                            <p><a href="#" class="channel">Channels</a></p>
+                        </li>
+                        <li class="active">
+                            <p><a href="#" class="order">Orders</a><span class="sidebar-badge">2</span></p>
+                        </li>
+                        <li>
+                            <p><a href="#" class="payment">Payments</a></p>
+                        </li>
+                        <div class="divider"></div>
+                        <li>
+                            <p><a href="#" class="setting">Settings</a></p>
+                        </li>
+                    </ul>
+                    <button class="btn btn-sidebar" id="sidebtn">
+                        <img src="../../images/icons/sidebar-arrow.svg" alt="icon" />
+                    </button>
+                    <div class="sidebar-bottom"></div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <main id="main" class="no-menu">
+            <div class="main-section dashboard">
+                <div class="banner-title">
+                    <div class="d-flex align-items-center">
+                        <!-- <div class="nav-title-back">
+                        <a href="#" class="btn"><img src="../../images/icons/go-back.svg" alt="back"></a>
+                    </div> -->
+                        <div class="title">
+                            <p class="text">Orders</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="custom-nav-tab-blue violet">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="all-orders-tab" data-bs-toggle="tab" data-bs-target="#all-orders" type="button" role="tab" aria-controls="all-orders" aria-selected="true">All orders</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="requests-tab" data-bs-toggle="tab" data-bs-target="#requests" type="button" role="tab" aria-controls="requests" aria-selected="false">Custom requests</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="services-tab" data-bs-toggle="tab" data-bs-target="#services" type="button" role="tab" aria-controls="services" aria-selected="false">Services</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-filter violet">
+                    <div class="d-flex">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="Channel-dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span id="Channel-filterButtonText">Channel</span>
+                                <span id="Channel-filterCount"></span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="Channel-dropdownMenuButton">
+                                <input class="form-control search" type="text" id="searchFilter-Channel" placeholder="Search" />
+                                <div class="list">
+                                    <div class="form-check">
+                                        <input type="checkbox" id="Channel-option1-Filter" class="form-check-input" data-category="Channel" value="Channel1" />
+                                        <label for="Channel-option1-Filter">
+                                            <p>Portugal</p>
+                                            <span>12</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" id="Channel-option2-Filter" class="form-check-input" data-category="Channel" value="Channel2" />
+                                        <label for="Channel-option2-Filter">
+                                            <p>Reino Unido</p>
+                                            <span>12</span>
+                                        </label>
+                                    </div>
+                                    <!-- Add more checkboxes for Category 1 -->
+                                </div>
+                                <hr />
+                                <button id="Channel-clearButton" class="btn btn-solid-white clear">Clear</button>
+                            </div>
+                            <div id="Channel-selected-filters" class="selected-filter"></div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="Status-dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span id="Status-filterButtonText">Status</span>
+                                <span id="Status-filterCount"></span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="Status-dropdownMenuButton">
+                                <input class="form-control search" type="text" id="searchFilter-Status" placeholder="Search" />
+                                <div class="list">
+                                    <div class="form-check">
+                                        <input type="checkbox" id="Status-option1-Filter" class="form-check-input" data-category="Status" value="Status1" />
+                                        <label for="Status-option1-Filter">
+                                            <p>Status</p>
+                                            <span>1</span>
+                                        </label>
+                                    </div>
+                                    <!-- Add more checkboxes for Category 2 -->
+                                </div>
+                                <hr />
+                                <button id="Status-clearButton" class="btn btn-solid-white clear">Clear</button>
+                            </div>
+                            <div id="Status-selected-filters" class="selected-filter"></div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="Price-dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span id="Price-filterButtonText">Price</span>
+                                <span id="Price-filterCount"></span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="Price-dropdownMenuButton">
+                                <input class="form-control search" type="text" id="searchFilter-Price" placeholder="Search" />
+                                <div class="list">
+                                    <div class="form-check">
+                                        <input type="checkbox" id="Price-option1-Filter" class="form-check-input" data-category="Price" value="Price1" />
+                                        <label for="Price-option1-Filter">
+                                            <p>Price</p>
+                                            <span>1</span>
+                                        </label>
+                                    </div>
+                                    <!-- Add more checkboxes for Category 2 -->
+                                </div>
+                                <hr />
+                                <button id="Price-clearButton" class="btn btn-solid-white clear">Clear</button>
+                            </div>
+                            <div id="Price-selected-filters" class="selected-filter"></div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="Languages-dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span id="Languages-filterButtonText">Languages</span>
+                                <span id="Languages-filterCount"></span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="Languages-dropdownMenuButton">
+                                <input class="form-control search" type="text" id="searchFilter-Languages" placeholder="Search" />
+                                <div class="list">
+                                    <div class="form-check">
+                                        <input type="checkbox" id="Languages-option1-Filter" class="form-check-input" data-category="Languages" value="Languages1" />
+                                        <label for="Languages-option1-Filter">
+                                            <p>Languages</p>
+                                            <span>1</span>
+                                        </label>
+                                    </div>
+                                    <!-- Add more checkboxes for Category 2 -->
+                                </div>
+                                <hr />
+                                <button id="Languages-clearButton" class="btn btn-solid-white clear">Clear</button>
+                            </div>
+                            <div id="Languages-selected-filters" class="selected-filter"></div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="Locations-dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span id="Locations-filterButtonText">Locations</span>
+                                <span id="Locations-filterCount"></span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="Locations-dropdownMenuButton">
+                                <input class="form-control search" type="text" id="searchFilter-Locations" placeholder="Search" />
+                                <div class="list">
+                                    <div class="form-check">
+                                        <input type="checkbox" id="Locations-option1-Filter" class="form-check-input" data-category="Locations" value="Locations1" />
+                                        <label for="Locations-option1-Filter">
+                                            <p>Locations</p>
+                                            <span>1</span>
+                                        </label>
+                                    </div>
+                                    <!-- Add more checkboxes for Category 2 -->
+                                </div>
+                                <hr />
+                                <button id="Locations-clearButton" class="btn btn-solid-white clear">Clear</button>
+                            </div>
+                            <div id="Locations-selected-filters" class="selected-filter"></div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="Delivery time-dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span id="Delivery time-filterButtonText">Delivery time</span>
+                                <span id="Delivery time-filterCount"></span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="Delivery time-dropdownMenuButton">
+                                <input class="form-control search" type="text" id="searchFilter-Delivery time" placeholder="Search" />
+                                <div class="list">
+                                    <div class="form-check">
+                                        <input type="checkbox" id="Delivery time-option1-Filter" class="form-check-input" data-category="Delivery time" value="Delivery time1" />
+                                        <label for="Delivery time-option1-Filter">
+                                            <p>Delivery time</p>
+                                            <span>1</span>
+                                        </label>
+                                    </div>
+                                    <!-- Add more checkboxes for Category 2 -->
+                                </div>
+                                <hr />
+                                <button id="Delivery time-clearButton" class="btn btn-solid-white clear">Clear</button>
+                            </div>
+                            <div id="Delivery time-selected-filters" class="selected-filter"></div>
+                        </div>
+                    </div>
+                    <div class="nav-title mb-0">
+                        <p class="d-flex">
+                            Sort:
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>New</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </p>
+                    </div>
+                </div>
+                <!-- Item List -->
+                <!-- <div id="item-list" class="mb-4">
+                    <ul class="list-group">
+                        <li class="list-group-item" data-category="Channel1">Channel 1</li>
+                        <li class="list-group-item" data-category="Channel2">Channel 2</li>
+                        <li class="list-group-item" data-category="Status1">Status 1</li>
+                        <li class="list-group-item" data-category="Price1">Price 1</li>
+                    </ul>
+                </div> -->
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade active show" id="all-orders" role="tabpanel" aria-labelledby="all-orders-tab">
+                        <div class="service-order-list">
+                            <div class="box">
+                                <div class="box-body service-order-top ">
+                                    <div class="service-order-top-left">
+                                        <div class="type"><img src="../../images/dashboard/request.svg" alt="icon" />Custom requests</div>
+                                        <a href="#">
+                                            <h1>Order #2453</h1>
+                                        </a>
+                                        <div class="divider"></div>
+                                        <div class="price"><p>AED 14,950</p></div>
+                                        <div class="divider"></div>
+                                        <div class="date">
+                                            <p>Sat, 18 Jul</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-order-top-right progression">
+                                        <div class="left-day">
+                                            <span>Left days:</span>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <span>19/25</span>
+                                        </div>
+                                        <div class="d-flex status status-in-progress">
+                                            <p>In progress</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-footer service-order-footer">
+                                    <a href="#" class="d-flex mb-2" style="flex-wrap: wrap">
+                                        <img class="rounded" src="../../images/icons/img-order.png" alt="img" />
+                                        <div class="name d-flex">
+                                            <div>
+                                                <h2>Custom Service name</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent morbi lectus ullamcorper lectus.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                   <!-- <div class="extra-wrapper"> -->
+                                    <div class="divider"></div>
+                                    <div class="item youtube-item">
+                                        <h6>Channel</h6>
+                                        <p><img src="../../images/dashboard/player.svg" alt="icon" />smotraTV</p>
+                                    </div>
+                                   <!-- </div> -->
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-body service-order-top">
+                                    <div class="service-order-top-left">
+                                        <div class="type"><img src="../../images/dashboard/request.svg" alt="icon" />Custom requests</div>
+                                        <a href="#">
+                                            <h1>Order #2453</h1>
+                                        </a>
+                                        <div class="divider"></div>
+                                        <div class="price"><p>AED 14,950</p></div>
+                                        <div class="divider"></div>
+                                        <div class="date">
+                                            <p>Sat, 18 Jul</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-order-top-right progression">
+                                        <div class="left-day">
+                                            
+                                        </div>
+                                        <div class="d-flex status status-pending">
+                                            <p>Pending</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-footer service-order-footer">
+                                    <a href="#" class="d-flex mb-2" style="flex-wrap: wrap">
+                                        <img class="rounded" src="../../images/icons/img-order.png" alt="img" />
+                                        <div class="name d-flex">
+                                            <div>
+                                                <h2>Custom Service name</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent morbi lectus ullamcorper lectus.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="divider"></div>
+                                    <div class="item youtube-item">
+                                        <h6>Channel</h6>
+                                        <p><img src="../../images/dashboard/player.svg" alt="icon" />smotraTV</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-body service-order-top ">
+                                    <div class="service-order-top-left">
+                                        <div class="type"><img src="../../images/dashboard/request.svg" alt="icon" />Services</div>
+                                        <a href="#">
+                                            <h1>Order #2453</h1>
+                                        </a>
+                                        <div class="divider"></div>
+                                        <div class="price"><p>AED 14,950</p></div>
+                                        <div class="divider"></div>
+                                        <div class="date">
+                                            <p>Sat, 18 Jul</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-order-top-right progression">
+                                        <div class="left-day">
+                                            <span>Left days:</span>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <span>19/25</span>
+                                        </div>
+                                        <div class="d-flex status status-in-progress">
+                                            <p>In progress</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-footer service-order-footer">
+                                    <a href="#" class="d-flex mb-2" style="flex-wrap: wrap">
+                                        <img class="rounded" src="../../images/icons/img-order.png" alt="img" />
+                                        <div class="name d-flex">
+                                            <div>
+                                                <h2>Custom Service name</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent morbi lectus ullamcorper lectus.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                   <!-- <div class="extra-wrapper"> -->
+                                    <div class="divider"></div>
+                                    <div class="item youtube-item">
+                                        <h6>Channel</h6>
+                                        <p><img src="../../images/dashboard/player.svg" alt="icon" />smotraTV</p>
+                                    </div>
+                                   <!-- </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="requests" role="tabpanel" aria-labelledby="requests-tab">fgh</div>
+                    <div class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">jkl</div>
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <div class="footer-body row">
+                        <div class="col-lg-2 col-12">
+                            <div class="footer-logo">
+                                <img src="../../images/tech-white-logo.svg" />
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-12">
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="#">Brand</a></li>
+                                    <li><a href="#">Influencer</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Career</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-12">
+                            <div class="footer-social">
+                                <ul>
+                                    <li>
+                                        <button class="btn">
+                                            <img src="../../images/icons/linkedin.svg" alt="icon" />
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="btn">
+                                            <img src="../../images/icons/instagram.svg" alt="icon" />
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="btn">
+                                            <img src="../../images/icons/facebook.svg" alt="icon" />
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="btn">
+                                            <img src="../../images/icons/twitter.svg" alt="icon" />
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="container">
+                    <div class="footer-bottom">
+                        <p>© Techfluencers 2023. All rights reserved</p>
+                        <a href="#">Terms and Conditions</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="./js/index.js"></script>
+
+        <script>
+            let btn = document.querySelector("#sidebtn");
+            let sidebar = document.querySelector(".sidebar");
+            let overlay = document.querySelector(".overlay");
+
+            btn.onclick = function () {
+                sidebar.classList.toggle("active"), overlay.classList.toggle("active");
+            };
+        </script>
+
+        <script>
+            const itemList = document.getElementById("item-list");
+            document.addEventListener("DOMContentLoaded", () => {
+                const Channel = ["Channel", "Status", "Price", "Languages", "Locations", "Delivery time"];
+
+                Channel.forEach((category) => {
+                    const filterCheckboxes = document.querySelectorAll(".form-check-input[data-category='" + category + "']");
+                    const clearButton = document.getElementById(category + "-clearButton");
+                    const selectedFilters = document.getElementById(category + "-selected-filters");
+                    const searchFilter = document.getElementById("searchFilter-" + category);
+                    const filterButtonText = document.getElementById(category + "-filterButtonText");
+                    const filterCount = document.getElementById(category + "-filterCount");
+
+                    function updateFilterButtonName() {
+                        const selectedFiltersCount = [...filterCheckboxes].filter((checkbox) => checkbox.checked).length;
+                        filterCount.textContent = selectedFiltersCount;
+                        filterButtonText.textContent = selectedFiltersCount > 0 ? category : category;
+                    }
+
+                    function updateSelectedFilters() {
+                        const activeFilters = [...filterCheckboxes].filter((checkbox) => checkbox.checked).map((checkbox) => checkbox.value);
+
+                        selectedFilters.innerHTML = "";
+
+                        activeFilters.forEach((filter) => {
+                            const filterBadge = document.createElement("span");
+                            filterBadge.classList.add("badge", "mt-2");
+                            filterBadge.textContent = filter;
+
+                            const closeButton = document.createElement("button");
+                            closeButton.classList.add("btn-close");
+                            closeButton.type = "button";
+                            closeButton.dataset.filterValue = filter;
+                            closeButton.addEventListener("click", removeSelectedFilter);
+
+                            filterBadge.appendChild(closeButton);
+                            selectedFilters.appendChild(filterBadge);
+                        });
+                    }
+
+                    function removeSelectedFilter(event) {
+                        const filterValue = event.target.dataset.filterValue;
+                        const checkbox = document.getElementById(category + "-option" + filterValue.slice(-1) + "-Filter");
+
+                        if (checkbox) {
+                            checkbox.checked = false;
+                            updateSelectedFilters();
+                            filterItems();
+                            updateFilterButtonName();
+                        }
+                    }
+
+                    clearButton.addEventListener("click", () => {
+                        filterCheckboxes.forEach((checkbox) => {
+                            checkbox.checked = false;
+                        });
+                        updateSelectedFilters();
+                        filterItems();
+                        updateFilterButtonName();
+                    });
+
+                    function filterItems() {
+                        const activeFilters = [...filterCheckboxes].filter((checkbox) => checkbox.checked).map((checkbox) => checkbox.value);
+
+                        const items = itemList.querySelectorAll(".list-group-item");
+
+                        items.forEach((item) => {
+                            if (activeFilters.length === 0 || activeFilters.includes(item.dataset.category)) {
+                                item.style.display = "block";
+                            } else {
+                                item.style.display = "none";
+                            }
+                        });
+                    }
+
+                    filterCheckboxes.forEach((checkbox) => {
+                        checkbox.addEventListener("change", () => {
+                            updateSelectedFilters();
+                            filterItems();
+                            updateFilterButtonName();
+                        });
+                    });
+
+                    searchFilter.addEventListener("input", () => {
+                        const searchTerm = searchFilter.value.toLowerCase();
+                        filterCheckboxes.forEach((checkbox) => {
+                            const label = checkbox.nextElementSibling.textContent.toLowerCase();
+                            const listItem = checkbox.parentElement;
+                            listItem.style.display = label.includes(searchTerm) ? "block" : "none";
+                        });
+                    });
+
+                    updateSelectedFilters();
+                    updateFilterButtonName();
+                });
+            });
+        </script>
+
+        <!-- from django.http import JsonResponse
+
+def get_items(request):
+    items = [
+        {'id': 1, 'name': 'Red item 1', 'category': 'red'},
+        {'id': 2, 'name': 'Green item 1', 'category': 'green'},
+        {'id': 3, 'name': 'Blue item 1', 'category': 'blue'},
+        {'id': 4, 'name': 'Red item 2', 'category': 'red'},
+        {'id': 5, 'name': 'Green item 2', 'category': 'green'},
+        {'id': 6, 'name': 'Blue item 2', 'category': 'blue'},
+    ]
+
+    return JsonResponse({'items': items}) -->
+
+        <!-- from django.urls import path
+from . import views
+
+urlpatterns = [
+    # Your other URLs here
+    path('api/items/', views.get_items, name='get_items'),
+] -->
+
+        <!-- let items;
+
+fetch('/api/items/')
+  .then(response => response.json())
+  .then(data => {
+    items = data.items.map(item => {
+      const li = document.createElement('li');
+      li.classList.add('list-group-item');
+      li.dataset.category = item.category;
+      li.textContent = item.name;
+      itemList.appendChild(li);
+      return li;
+    });
+  }); -->
+    </body>
+</html>

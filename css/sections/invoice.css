@@ -1,0 +1,90 @@
+.invoices .grand-total{
+	margin-top: 30px;
+}
+.invoices .grand-total h1{
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	color: #212121;
+	text-align: center;
+	margin: 16px 0;
+}
+.invoices tr th,
+.invoices tr td{
+	padding: 20px;
+}
+.invoices tr th{
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 18px;
+	color: #212121;
+}
+.invoices tr td{
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 20px;
+	color: #212121;
+}
+.invoices tr td a:not([href]):not([class]), 
+.invoices tr td a:not([href]):not([class]):hover{
+	color: #5B69BD;
+}
+.brand .invoices tr td a:not([href]):not([class]), 
+.brand .invoices tr td a:not([href]):not([class]):hover{
+	color: #6A9586;
+}
+.invoices .table{
+	background: #FFFFFF;
+	border-radius: 12px;
+	margin-bottom: 20px;
+}
+tr.hide-table-padding td{
+	padding: 0;
+	border: none;
+}
+tr.hide-table-padding{
+	border: none;
+}
+
+.table>:not(:last-child)>:last-child>*{
+	border-bottom-color: #E9EBF3;
+}
+.table-bordered th:first-child{
+	border-left: none;
+}
+.table-bordered th:last-child{
+	border-right: none;
+}
+.service-order-invoice{
+	padding: 20px;
+}
+.service-order-invoice .item h1{
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 18px;
+	color: #212121;
+	margin-bottom: 10px;
+}
+.service-order-invoice .item p{
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+	color: #757575;
+	margin-bottom: 10px;
+}
+.invoices .collapsed .expand-button:after {
+    background-image: url(../../images/influencer-list/accardion-expand.svg);
+    transform: rotate(180deg);
+    transition: ease-in-out .3s;
+}
+.invoices .expand-button:after {
+    content: " ";
+    width: 10px;
+    height: 5px;
+    position: relative;
+    top: 8px;
+    float: right;
+    background-image: url(../../images/influencer-list/accardion-expand.svg);
+    background-repeat: no-repeat;
+    transition: ease-in-out .3s;
+}

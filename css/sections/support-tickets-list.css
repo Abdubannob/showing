@@ -1,0 +1,34 @@
+.support-tickets-list{
+	margin-top: 30px;
+}
+.support-tickets-list .influencer-card{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.support-tickets-list .influencer-card-body{
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: none;
+}
+.support-tickets-list .user-info{
+	margin-right: 20px;
+}
+.support-tickets-list .influencer-stats div{
+	padding: 0 20px;
+	border-left: 1px solid #E9EBF3;
+}
+.support-tickets-list .influencer-stats .location{
+	display: flex;
+    align-items: center;
+}
+.support-tickets-list .influencer-stats .location p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7E847F;
+    margin-left: 3px;
+}
+.influencer-card.active{
+	border-left: 5px solid #707FDA;
+}

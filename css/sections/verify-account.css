@@ -1,0 +1,104 @@
+.verify-account{
+	margin-top: 30px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat( 3, 1fr);
+}
+.verify-account .verify-item{
+	min-height: 346px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.verify-account .verify-item img{
+	width: 100px;
+	height: 100px;
+	justify-self: center;
+	align-self: flex-end;
+}
+.verify-account .verify-item h4{
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 14px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #6A9586;
+	margin-top: 20px;
+	justify-self: center;
+}
+.verify-account .verify-item h4.violet{
+	color: #707FDA;
+}
+.verify-account .verify-item.verified h4{
+	align-self: end;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+.verify-item.verified .verify-account-stats{
+	margin: 0;
+	align-self: end;
+}
+.verify-item .btn{
+	align-self: end;
+}
+.verify-account-stats{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 200px;
+	margin: auto;
+}
+.verify-account-stats span{
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 56px;
+	color: #222723;
+	margin-right: 10px;
+}
+.verify-account-stats p{
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 20px;
+	color: #757575;
+}
+.verify-account p.verify-account-info{
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+	color: #212121;
+}
+.verify-account .verify-promocode{
+	grid-column: 3/3;
+}
+.verify-account .verify-promocode img{
+	width: 36px;
+	height: 36px;
+	margin-right: 10px;
+}
+.verify-account .verify-promocode h3{
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 18px;
+	color: #383B50;
+}
+.verify-account .verify-promocode p{
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+	color: #000000;
+	margin: 20px 0 36px;
+}
+@media (max-width: 1200px){
+	.verify-account{
+	    grid-template-columns: repeat( 2, 1fr);
+	}
+	.verify-account .verify-promocode{
+		grid-column: 1/2;
+	}
+}
+@media (max-width: 575.98px){
+	.verify-account{
+	    grid-template-columns: 1fr;
+	}
+}

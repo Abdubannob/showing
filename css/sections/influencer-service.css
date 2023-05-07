@@ -1,0 +1,67 @@
+.influencer-service{
+	margin-top: 20px;
+}
+.influencer-service .item{
+	background-color: #FFFFFF;
+	border-radius: 12px;
+	margin-bottom: 20px;
+}
+.influencer-service .service-body{
+	display: flex;
+	padding: 20px;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #E9EBF3;
+}
+.influencer-service .service-body img{
+	width: 90px;
+	height: 69px;
+	margin-right: 20px;
+	border-radius: 6px;
+	margin-bottom: 10px;
+}
+.influencer-service .service-body h1{
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 20px;
+	margin-bottom: 10px;
+	color: #212121;
+}
+.influencer-service .service-body p{
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	color: #757575;
+	max-width: 800px;
+}
+.influencer-service .service-footer{
+	padding: 10px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.influencer-service .service-footer h3{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 20px;
+	color: #212121;
+	margin-right: 30px;
+	margin-bottom: 10px;
+}
+.influencer-service .service-footer li{
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: #757575;
+	margin-bottom: 10px;
+}
+.influencer-service .service-footer li p{
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	color: #212121;
+	margin-right: 8px;
+}
+.influencer-service .service-footer li img{
+	margin-right: 3px;
+}

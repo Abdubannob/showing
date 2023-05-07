@@ -1,0 +1,134 @@
+.notification-table{
+	background: #FFFFFF;
+	border-radius: 12px;
+	margin-top: 20px;
+	height: 75vh;
+}
+.notification-table .table{
+	margin-bottom: 0;
+}
+.notification-table .ftd{
+
+}
+.notification-table .std{
+	width: 46%;
+}
+.notification-table .ttd{
+	width: 15%;
+}
+.notification-table td{
+	padding: 12px 20px;
+}
+.table-bordered{
+	border-color: #E9EBF3;
+}
+.table-bordered tr{
+	vertical-align: middle;
+}
+.table-bordered td:first-child{
+	border-left: none;
+}
+.table-bordered td:last-child{
+	border-right: none;
+}
+.table-bordered tr:first-child{
+	border-top: none;
+}
+.table tr:first-child td{
+	padding-top: 20px;
+}
+.not-read .ftd{
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 19px;
+	color: #212121;
+	padding-left: 42px;
+}
+.not-read .std{
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	color: #212121;
+}
+.read .ftd{
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 19px;
+	color: #212121;
+	padding-left: 42px;
+}
+.read .std{
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	color: #212121B3;
+}
+.not-read .ftd li{
+	color: #707FDA;
+}
+.not-read .ftd li span{
+	color: #212121;
+}
+.ttd a{
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 16px;
+	color: #6A9586;
+}
+.violet .ttd a{
+	color: #707FDA;
+}
+.ttd span{
+	font-size: 14px;
+	line-height: 16px;
+	float: right;
+	color: #757575;
+}
+.notification .form-check{
+	margin-bottom: 0;
+	padding-left: 0;
+}
+.notification .form-check-input:checked {
+    background-color: #6A9586;
+    border-color: #6A9586;
+}
+.notification.violet .form-check-input:checked {
+    background-color: #707FDA;
+    border-color: #707FDA;
+}
+.notification .form-check-input {
+    border: 2px solid #B1CDBA;
+    border-radius: 4px;
+}
+.notification.violet .form-check-input {
+    border: 2px solid #C7CBE0;
+    border-radius: 4px;
+}
+tbody .bg-color{
+ background-color: #6A95861A;
+}
+
+.iti{
+	width: 100%;
+}
+
+.notification.btn-group .btn{
+	padding: 0;
+	margin-right: 10px;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 18px;
+}
+.notification.btn-group .btn img{
+	margin-right: 5px;
+	margin-bottom: 2px;
+}
+.notification.btn-group .clear{
+	color: #6A9586;
+}
+.notification.btn-group .clear-violet{
+	color: #707FDA;
+}
+.notification.btn-group .delete{
+	color: #FF540A;
+}

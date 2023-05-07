@@ -1,0 +1,29 @@
+.congratulations{
+	background-color: #ffffff;
+}
+.congratulation-body{
+	display: grid;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    margin-top: 150px;
+}
+.congratulation-body h1{
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 56px;
+	color: #222723;
+	margin: 30px 0 10px;
+}
+.congratulation-body p{
+	font-size: 18px;
+	line-height: 20px;
+	color: #222723;
+	margin-bottom: 60px;
+	max-width: 500px;
+}
+.congratulation-body span{
+	color: #6A9586;
+}
+
+/*****for violet color****/

@@ -1,0 +1,127 @@
+.header-filter {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 60px;
+    background-color: #f9f9f9;
+    z-index: 99;
+    padding: 10px 0;
+}
+.header-filter .dropdown-toggle {
+    border: 1px solid #c7cbe0;
+    border-radius: 6px;
+    padding: 10px;
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #212121;
+}
+.header-filter input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+.header-filter .switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+    margin-right: 10px;
+}
+.header-filter .slider:before {
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 21px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.header-filter .notification-switch p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 3px;
+    color: #212121;
+}
+.header-filter .dropdown-menu{
+    padding: 20px;
+    border: 1px solid #E9EBF3;
+    box-shadow: 0px 15px 60px -5px rgba(27, 30, 51, 0.24);
+    border-radius: 12px;
+}
+.header-filter .search{
+    margin-bottom: 15px;
+}
+.header-filter hr{
+    margin: 15px 0;
+    background-color: #E9EBF3;
+    opacity: 1;
+}
+.header-filter .clear{
+    padding: 0;
+    float: right;
+}
+.header-filter .dropdown-menu .list{
+    max-height: 265px;
+    overflow: auto;
+}
+.header-filter .form-check{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.header-filter .form-check:last-child{
+    margin-bottom: 0;
+}
+.header-filter .form-check-input{
+    margin-top: 0;
+    margin-right: 10px;
+}
+.header-filter .form-check label{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.header-filter .form-check p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #212121;
+}
+.header-filter .form-check span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9397B2;
+}
+.header-filter .form-check-input:checked {
+    background-color: #707FDA;
+    border-color: #707FDA;
+}
+.header-filter .selected-filter{
+    display: flex;
+    flex-direction: column;
+}
+.header-filter .selected-filter span{
+    width: min-content;
+    border: 1px solid #c7cbe0;
+    padding: 5px 8px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #757575;
+}
+.header-filter .selected-filter span .btn-close{
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    margin-left: 5px;
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/12px auto no-repeat;
+}

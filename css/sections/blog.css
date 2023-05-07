@@ -1,0 +1,212 @@
+.blog{
+	padding: 40px 40px;
+}
+.bg-blog{
+    background-image: url(../../images/landing/blog-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 233px;
+    padding: 50px 0;
+}
+.bg-blog h1{
+	font-weight: bold;
+    font-size: 64px;
+    line-height: 64px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+.blog-info ul{
+	padding-left: 32px;
+	margin-top: 6px;
+}
+.blog-info ul li{
+	list-style: initial;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #757575;
+}
+.blog-title h1{
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 42px;
+	color: #222723;
+	margin-bottom: 40px;
+	text-transform: capitalize;
+}
+.blog-items{
+	display: grid;
+	grid-gap: 40px;
+	justify-content: center;
+	grid-template-columns: repeat( auto-fit, minmax(300px, 346px));
+}
+.blog-items .item{
+	background: #FFFFFF;
+	display: flex;
+	overflow: hidden;
+	flex-direction: column;
+	border-radius: 12px;
+	box-shadow: 0px 10px 40px -5px rgba(27, 30, 51, 0.1);
+}
+.blog-items .item img{
+	max-height: 225px;
+	width: 100%;
+}
+.blog-items .item-body{
+	padding: 30px 20px 20px;
+	flex: 1 1 auto;
+	border-bottom: 1px solid #E9EBF3;
+}
+.blog-items .item-body h3{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	color: #383B50;
+	margin-bottom: 10px;
+}
+.blog-items .item-body p{
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	color: #6E7391;
+}
+.blog-items .item-footer{
+	padding: 20px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: #6E7391;
+}
+
+.blog-manager .manager{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.blog-manager .manager img{
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.blog-manager .manager p{
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 20px;
+	color: #212121;
+	margin-bottom: 5px;
+}
+.blog-manager .manager span{
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 18px;
+	color: #757575;
+}
+
+@media (max-width: 575.98px) {
+	.blog{
+		padding: 40px 0px;
+	}
+}
+
+
+.blog-about{
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+.back-btn{
+	padding: 0;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.back-btn .btn{
+	padding: 0;
+}
+.back-btn h1{
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	color: #383B50;
+	margin-left: 10px; 
+}
+.blog-info .big-img img{
+	display: block;
+	margin: 0 auto 30px;
+	width: 50%;
+	border-radius: 12px;
+}
+.blog-info .date p{
+	font-size: 16px;
+	line-height: 18px;
+	color: #6E7391;
+	margin-bottom: 15px;
+}
+.blog-info h1{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 20px;
+	color: #383B50;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+.blog-info p,
+.blog-info span{
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 200%;
+	color: #757575;
+	margin-bottom: 45px;
+}
+.blog-about .blog-items{
+	display: grid;
+	grid-gap: 20px;
+	justify-content: center;
+	grid-template-columns: repeat( auto-fit, minmax(300px, 300px));
+}
+.blog-about .related-post h1{
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #000000;
+	margin-bottom: 30px;
+}
+.blog-tag p,
+.blog-share p{
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #6E7391;
+	margin-right: 10px;
+}
+.blog-tag,
+.blog-share{
+	display: flex;
+	align-items: center;
+}
+.blog-share{
+	margin: 40px 0;
+}
+.blog-tag li{
+	border: 1px solid #C7CBE0;
+	border-radius: 20px;
+	text-align: center;
+	padding: 5px 20px;
+}
+.blog-share li{
+	margin-left: 30px;
+}
+.blog-share li:first-child{
+	margin-left: 0;
+}
+.blog-share li img{
+	width: 24px;
+	height: 24px;
+}
+.career-about .form-group{
+	margin-bottom: 20px;
+}
